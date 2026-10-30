@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Your name here">
+<meta name="author" content="Aude Carels">
 
-<title>Mock Exam</title>
+<title>Mock Exam 4</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,6 +26,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -82,13 +117,7 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#instructions" id="toc-instructions" class="nav-link active" data-scroll-target="#instructions"><span class="header-section-number">1</span> Instructions</a>
-  <ul class="collapse">
-  <li><a href="#english" id="toc-english" class="nav-link" data-scroll-target="#english"><span class="header-section-number">1.1</span> English</a></li>
-  <li><a href="#français" id="toc-français" class="nav-link" data-scroll-target="#français"><span class="header-section-number">1.2</span> Français</a></li>
-  </ul></li>
-  <li><a href="#english-1" id="toc-english-1" class="nav-link" data-scroll-target="#english-1"><span class="header-section-number">2</span> English</a></li>
-  <li><a href="#french" id="toc-french" class="nav-link" data-scroll-target="#french"><span class="header-section-number">3</span> French</a></li>
+  <li><a href="#instructions" id="toc-instructions" class="nav-link active" data-scroll-target="#instructions"><span class="header-section-number">1</span> Instructions</a></li>
   </ul>
 </nav>
 </div>
@@ -96,7 +125,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Mock Exam</h1>
+<h1 class="title">Mock Exam 4</h1>
 </div>
 
 
@@ -106,7 +135,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Your name here </p>
+             <p>Aude Carels </p>
           </div>
   </div>
     
@@ -121,21 +150,6 @@ window.Quarto = {
 
 <section id="instructions" class="level1" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> Instructions</h1>
-<section id="english" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="english"><span class="header-section-number">1.1</span> English</h2>
-<p>First choose your language and delete the section of the document in the other language.</p>
-<p>Answer the questions precisely but briefly: the questions are detailed to guide you so there are many of them. Don’t waste your time repeating the course: you have all documents with you, copying their content is not valuable. To answer factual questions, you don’t need to make sentences: e.g., just write “4.” to answer the question “how much are 2 + 2?”.</p>
-<p>Before you begin:</p>
-<ol type="1">
-<li>Type your name in the header of the document, in the author field.</li>
-<li>Run the following in the terminal (answer <em>No</em> if a message box asks you if you want to close some files):</li>
-</ol>
-<p><code>quarto publish gh-pages index.qmd</code></p>
-<p>During your work: render the document regularly (at the end of each question, for example) so that problems do not pile up.</p>
-<p>At the end of the exam: save the file, make a commit and push the project to GitHub. Do not modify the project after the exam has finished.</p>
-</section>
-<section id="français" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="français"><span class="header-section-number">1.2</span> Français</h2>
 <p>Commencez par choisir votre langue et supprimez la partie du document rédigée dans l’autre langue.</p>
 <p>Répondez aux questions de manière précise mais concise : les questions sont détaillées pour vous guider, c’est pourquoi elles sont nombreuses. Ne perdez pas votre temps à répéter le cours : vous disposez de tous les documents, il est inutile d’en recopier le contenu. Pour répondre aux questions factuelles, vous n’avez pas besoin de rédiger des phrases : par exemple, écrivez simplement “4.” pour répondre à la question “Combien font 2 + 2 ?”.</p>
 <p>Avant de commencer:</p>
@@ -146,31 +160,20 @@ window.Quarto = {
 <p><code>quarto publish gh-pages index.qmd</code></p>
 <p>Pendant votre travail: rendez le document régulièrement (à la fin de chaque question par exemple) pour ne pas laisser les problèmes s’accumuler.</p>
 <p>A la fin de l’examen: enregistrez le fichier, faites un commit et poussez le projet sur GitHub. Ne modifiez pas le projet après la fin de l’examen.</p>
-</section>
-</section>
-<section id="english-1" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> English</h1>
-<p>Instructions are in italics. Read them carefully. Questions are in “blockquote” format. Type your answer below the question.</p>
-<blockquote class="blockquote">
-<p>How much are 2 + 2?</p>
-</blockquote>
-<p>Your answer here.</p>
-<blockquote class="blockquote">
-<p>What is the square root of <span class="math inline">\(\pi\)</span>?</p>
-</blockquote>
-<p>Your answer here. You need a code chunk to answer this question: create it.</p>
-</section>
-<section id="french" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> French</h1>
 <p>Les instructions sont en italique. Lisez-les attentivement. Les questions sont au format “blockquote”. Tapez votre réponse sous la question.</p>
 <blockquote class="blockquote">
 <p>Combien font 2 + 2 ?</p>
 </blockquote>
-<p>Votre réponse ici.</p>
+<p>4</p>
 <blockquote class="blockquote">
 <p>Quelle est la racine carrée de <span class="math inline">\(\pi\)</span> ?</p>
 </blockquote>
-<p>Votre réponse ici. Vous devez créer un bout de code pour répondre à cette question.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(pi)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1.772454</code></pre>
+</div>
+</div>
 </section>
 
 </main>
